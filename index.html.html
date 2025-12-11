@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anand Sharma — Portfolio</title>
+  <meta name="description" content="Anand Sharma — Full-stack & Frontend Developer portfolio"/>
+  <style>
+    :root{
+      --bg-1: #0b3d91;
+      --bg-2: #2b79d9;
+      --card: rgba(255,255,255,0.08);
+      --glass: rgba(255,255,255,0.06);
+      --accent: #ffd166;
+      --muted: rgba(255,255,255,0.8);
+      --max-width: 1100px;
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh;
+      background: linear-gradient(135deg,var(--bg-1) 0%, var(--bg-2) 100%);
+      display:flex; justify-content:center; align-items:flex-start; padding:40px 20px;
+      color:white;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      width:100%; max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:18px; padding:28px;
+      box-shadow:0 12px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+    }
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{
+      width:96px;height:96px;border-radius:14px;
+      background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:28px;color:var(--muted)
+    }
+    h1{margin:0;font-size:24px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .top-right{margin-left:auto;text-align:right}
+    .contact{display:flex;gap:10px;flex-direction:column;align-items:flex-end}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    nav{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:22px}
+    main{padding:16px}
+    aside{padding:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px}
+    section{margin-bottom:20px}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px;font-size:13px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .proj{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:12px;border-radius:10px}
+    .proj h4{margin:0 0 6px}
+    .proj p{margin:0;color:var(--muted);font-size:14px}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--accent);color:#022046;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:var(--muted)}
+    footer{margin-top:18px;text-align:center;color:rgba(255,255,255,0.6);font-size:13px}
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .top-right{align-items:flex-start}
+      .contact{align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">AS</div>
+      <div>
+        <h1>Anand Sharma</h1>
+        <p class="lead">Full-stack & Frontend Developer — ex-J.P. Morgan intern • Deloitte simulations</p>
+        <nav>
+          <span class="chip">Java</span>
+          <span class="chip">Frontend</span>
+          <span class="chip">React</span>
+          <span class="chip">Python</span>
+          <span class="chip">Data Analytics</span>
+        </nav>
+      </div>
+      <div class="top-right">
+        <div class="contact">
+          <div>Delhi, India</div>
+          <a href="tel:+919569207344">+91 95692 07344</a>
+          <a href="mailto:letmefindjobplease@gmail.com">letmefindjobplease@gmail.com</a>
+          <a href="https://www.linkedin.com/in/joinanand" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin-top:0">About Me</h2>
+          <p style="color:var(--muted)">Full-stack developer skilled in building scalable, user-centric applications.</p>
+        </section>
+
+        <section class="card" id="projects">
+          <h3>Selected Projects</h3>
+          <div class="projects" style="margin-top:12px">
+            <div class="proj"><h4>Interactive Frontend UI</h4><p>Responsive UI components.</p></div>
+            <div class="proj"><h4>Java Application</h4><p>OOP modular application.</p></div>
+            <div class="proj"><h4>Python Automation</h4><p>Automation scripts.</p></div>
+            <div class="proj"><h4>Data Dashboard</h4><p>Visual dashboards.</p></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Experience</h3>
+          <ul style="color:var(--muted);margin-left:18px">
+            <li>J.P. Morgan — SE Virtual Internship</li>
+            <li>Deloitte Australia — Cyber, Tech, Data Simulations</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Education</h3>
+          <p style="color:var(--muted)">BCA — MDU, Rohtak (2023)</p>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card">
+          <h3>Skills</h3>
+          <div class="skills" style="margin-top:10px">
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Python</span>
+            <span class="skill">Git</span>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h3>Certifications</h3>
+          <ul style="color:var(--muted);margin-left:18px">
+            <li>Deloitte — Data Analytics</li>
+            <li>Deloitte — Cyber</li>
+            <li>Deloitte — Tech</li>
+            <li>J.P. Morgan — SE Simulation</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer>Built by Anand Sharma • Modern Portfolio</footer>
+  </div>
+</body>
+</html>
